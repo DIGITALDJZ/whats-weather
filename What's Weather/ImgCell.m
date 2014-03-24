@@ -1,21 +1,20 @@
 //
-//  ForegroundView.m
+//  ImgCell.m
 //  What's Weather
 //
-//  Created by 杯面小王子 on 14-3-23.
+//  Created by 杯面小王子 on 14-3-24.
 //  Copyright (c) 2014年 theLittleLab. All rights reserved.
 //
 
-#import "ForegroundView.h"
-@interface ForegroundView()
-@property (strong,nonatomic) OverallInfoView *overallInfoView;
-@end
-@implementation ForegroundView
+#import "ImgCell.h"
+
+@implementation ImgCell
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        // Initialization code
     }
     return self;
 }

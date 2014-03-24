@@ -1,15 +1,14 @@
 //
-//  OverallInfoView.m
+//  ImgCell.m
 //  What's Weather
 //
-//  Created by 杯面小王子 on 14-3-23.
+//  Created by 杯面小王子 on 14-3-24.
 //  Copyright (c) 2014年 theLittleLab. All rights reserved.
 //
 
-#import "OverallInfoView.h"
+#import "ImgCell.h"
 
-
-@implementation OverallInfoView
+@implementation ImgCell
 
 - (id)initWithFrame:(CGRect)frame
 {
