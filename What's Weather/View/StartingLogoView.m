@@ -42,7 +42,5 @@ const float ANIMATE_DURATION =1.0;
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
     [_delegate didFinishStartingAnimation];
 }
--(void)animationReadyToStop{
-    //[_delegate didAboutToFinishStartingAnimation];
-}
+
 @end

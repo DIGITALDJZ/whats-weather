@@ -94,6 +94,16 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-T7-Vec">
                                                     <rect key="frame" x="0.0" y="428" width="320" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foreground_line" translatesAutoresizingMaskIntoConstraints="NO" id="6lJ-rC-PKE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="4"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="h8r-0c-sOv">
+                                                            <rect key="frame" x="0.0" y="4" width="320" height="136"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
@@ -102,10 +112,14 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="p7D-T7-Vec" secondAttribute="trailing" id="JKN-3X-DEi"/>
                                             <constraint firstItem="p7D-T7-Vec" firstAttribute="leading" secondItem="XeF-F3-CCw" secondAttribute="leading" id="MW4-qt-jb8"/>
+                                            <constraint firstAttribute="bottom" secondItem="p7D-T7-Vec" secondAttribute="bottom" id="adi-2B-ydV"/>
                                             <constraint firstAttribute="bottom" secondItem="p7D-T7-Vec" secondAttribute="bottom" id="vRg-OL-bV3"/>
                                         </constraints>
                                         <size key="customSize" width="320" height="568"/>
                                         <connections>
+                                            <outlet property="foregroundContainer" destination="p7D-T7-Vec" id="bK0-hf-y64"/>
+                                            <outlet property="foregroundImg" destination="h8r-0c-sOv" id="bkR-7r-B79"/>
+                                            <outlet property="foregroundline" destination="6lJ-rC-PKE" id="6hj-Ri-bHn"/>
                                             <outlet property="imageView" destination="R2g-Rl-C7P" id="3Cl-El-vP8"/>
                                         </connections>
                                     </collectionViewCell>
@@ -162,10 +176,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541" y="-89"/>
+            <point key="canvasLocation" x="316" y="-95"/>
         </scene>
     </scenes>
     <resources>
+        <image name="blue" width="320" height="135"/>
+        <image name="foreground_line" width="960" height="4"/>
         <image name="ico_category" width="20" height="20"/>
         <image name="ico_pic" width="20" height="20"/>
         <image name="launchLogo" width="205" height="160"/>

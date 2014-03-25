@@ -10,5 +10,8 @@
 
 @interface ImgCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIView *foregroundContainer;
+@property (weak, nonatomic) IBOutlet UIImageView *foregroundline;
+@property (weak, nonatomic) IBOutlet UIImageView *foregroundImg;
 
 @end

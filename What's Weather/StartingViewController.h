@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "StartingLogoView.h"
-@interface StartingViewController : UIViewController <StartingDelegate>
+@interface StartingViewController : UIViewController
 
                   
 @end

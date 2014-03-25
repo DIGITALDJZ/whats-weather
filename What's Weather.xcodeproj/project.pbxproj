@@ -30,6 +30,8 @@
 		A374085B18D9BAB7003D8D36 /* start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A374085918D9BAB7003D8D36 /* start.jpg */; };
 		A374085C18D9BAB7003D8D36 /* start@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A374085A18D9BAB7003D8D36 /* start@2x.jpg */; };
 		A374086218D9C221003D8D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A374086118D9C221003D8D36 /* QuartzCore.framework */; };
+		A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */; };
+		A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */; };
 		A3FFA40418E07B870077C148 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFA40318E07B870077C148 /* ImgCell.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,10 @@
 		A374085918D9BAB7003D8D36 /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = start.jpg; sourceTree = "<group>"; };
 		A374085A18D9BAB7003D8D36 /* start@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "start@2x.jpg"; sourceTree = "<group>"; };
 		A374086118D9C221003D8D36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForegroundInfoView.h; path = View/ForegroundInfoView.h; sourceTree = "<group>"; };
+		A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForegroundInfoView.m; path = View/ForegroundInfoView.m; sourceTree = "<group>"; };
+		A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+customize.h"; sourceTree = "<group>"; };
+		A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+customize.m"; sourceTree = "<group>"; };
 		A3FFA40218E07B870077C148 /* ImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgCell.h; path = View/ImgCell.h; sourceTree = "<group>"; };
 		A3FFA40318E07B870077C148 /* ImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgCell.m; path = View/ImgCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +173,8 @@
 				A32D9D4718DAC76A002746B4 /* StartingViewController.m */,
 				A32D9D4C18DACDD0002746B4 /* StartingSegue.h */,
 				A32D9D4D18DACDD0002746B4 /* StartingSegue.m */,
+				A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */,
+				A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */,
 				A374086018D9BFFF003D8D36 /* View */,
 				A3FFA3FE18E073880077C148 /* model */,
 				A374082A18D97D33003D8D36 /* Supporting Files */,
@@ -203,6 +211,8 @@
 				A3FFA40318E07B870077C148 /* ImgCell.m */,
 				A32D9D4918DACB08002746B4 /* StartingLogoView.h */,
 				A32D9D4A18DACB08002746B4 /* StartingLogoView.m */,
+				A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */,
+				A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -296,10 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A374083018D97D33003D8D36 /* main.m in Sources */,
+				A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */,
 				A3FFA40418E07B870077C148 /* ImgCell.m in Sources */,
 				A374083A18D97D33003D8D36 /* WeatherViewController.m in Sources */,
 				A32D9D4B18DACB08002746B4 /* StartingLogoView.m in Sources */,
 				A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */,
+				A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */,
 				A374083418D97D33003D8D36 /* WeatherAppDelegate.m in Sources */,
 				A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */,
 			);

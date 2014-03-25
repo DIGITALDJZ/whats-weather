@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImgCell.h"
+#import "ForegroundInfoView.h"
 @interface WeatherViewController : UIViewController <UICollectionViewDelegate>
 
 @end

@@ -66,6 +66,10 @@
     // Register nib file for the cell
     ImgCell *imgCell=[cv dequeueReusableCellWithReuseIdentifier:@"imgCell" forIndexPath:indexPath];
     imgCell.imageView.image =[self.imgArray objectAtIndex:indexPath.row];
+    
+    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(0, 0, 320, 132)];
+    [imgCell.foregroundContainer addSubview:foreGroundInfoView];
+
     return imgCell;
 
 }

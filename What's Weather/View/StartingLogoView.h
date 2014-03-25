@@ -10,7 +10,6 @@
 @protocol StartingDelegate
 
 -(void)didFinishStartingAnimation;
--(void)didAboutToFinishStartingAnimation;
 @end
 @interface StartingLogoView : UIImageView
 @property (strong) id delegate;
