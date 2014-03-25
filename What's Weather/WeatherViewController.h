@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BTGlassScrollView.h"
-@interface WeatherViewController : UIViewController <UIScrollViewAccessibilityDelegate>
+#import "ImgCell.h"
+@interface WeatherViewController : UIViewController <UICollectionViewDelegate>
 
 @end

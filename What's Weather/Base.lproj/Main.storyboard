@@ -29,6 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SrI-lm-EFI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="logoImg" destination="i4X-xL-V2M" id="o8i-5T-3tO"/>
                     </connections>
@@ -41,6 +42,7 @@
         <scene sceneID="cUA-Rx-3gg">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Wcg-ps-tF8" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MfK-LI-Q6U">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -56,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-504" y="-95"/>
         </scene>
-        <!--Weather View Controller - shdshd-->
+        <!--Weather View Controller - WeatherViewController-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="WeatherViewController" title="shdshd" id="vXZ-lx-hvc" customClass="WeatherViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherViewController" title="WeatherViewController" id="vXZ-lx-hvc" customClass="WeatherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -68,6 +70,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-Bj-IRX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EPP-tA-2Rn">
+                                    <size key="itemSize" width="320" height="568"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="imgCell" id="XeF-F3-CCw" customClass="ImgCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yunnan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R2g-Rl-C7P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-T7-Vec">
+                                                    <rect key="frame" x="0.0" y="428" width="320" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="p7D-T7-Vec" secondAttribute="trailing" id="JKN-3X-DEi"/>
+                                            <constraint firstItem="p7D-T7-Vec" firstAttribute="leading" secondItem="XeF-F3-CCw" secondAttribute="leading" id="MW4-qt-jb8"/>
+                                            <constraint firstAttribute="bottom" secondItem="p7D-T7-Vec" secondAttribute="bottom" id="vRg-OL-bV3"/>
+                                        </constraints>
+                                        <size key="customSize" width="320" height="568"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="R2g-Rl-C7P" id="3Cl-El-vP8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="sAs-kg-nP7"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="luf-yf-ekv"/>
+                                </connections>
+                            </collectionView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-yj-GB0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,8 +145,16 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yJh-Bj-IRX" secondAttribute="bottom" id="N0S-gq-dLa"/>
+                            <constraint firstAttribute="trailing" secondItem="yJh-Bj-IRX" secondAttribute="trailing" id="aCL-Q4-Lew"/>
+                            <constraint firstItem="yJh-Bj-IRX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="e5S-re-GeX"/>
+                            <constraint firstItem="yJh-Bj-IRX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pNv-Cd-Rl6"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="locationCollection" destination="yJh-Bj-IRX" id="u5X-x2-zYX"/>
                         <outlet property="topbarTitle" destination="M1Z-w4-rOz" id="Jhy-vx-FaP"/>
                         <outlet property="topbarView" destination="mxK-yj-GB0" id="iSw-0X-lSt"/>
                         <outlet property="view" destination="kh9-bI-dsS" id="wAc-pK-uN3"/>
@@ -115,10 +170,11 @@
         <image name="ico_pic" width="20" height="20"/>
         <image name="launchLogo" width="205" height="160"/>
         <image name="start.jpg" width="320" height="568"/>
+        <image name="yunnan.jpg" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
