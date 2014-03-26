@@ -10,4 +10,10 @@
 
 @interface ForegroundInfo_label : UIView
 
+@property (strong,nonatomic) UIImage *ico_image;
+@property (strong,nonatomic) UILabel *textLabel;
+@property (nonatomic) CGRect icoRect;
+
+-(void)updateLabelText:(NSString *)labelText;
+-(void)updateLabelIco:(NSString *)icoKey;
 @end

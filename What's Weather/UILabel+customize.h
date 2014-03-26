@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "helper.h"
 @interface UILabel (customize)
 -(void)customizeLabelwithFontName:(NSString *)fontName fontSize:(NSInteger)fontSize color:(UIColor *)color alignment:(NSInteger)textAlignment;
+-(void)setAutoLabelHeight;
 @end

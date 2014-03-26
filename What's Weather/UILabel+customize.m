@@ -13,5 +13,22 @@
     self.textColor=color;
     self.font=[UIFont fontWithName:fontName size:fontSize];
     self.textAlignment=textAlignment;
+    self.backgroundColor=[UIColor clearColor];
+    
 }
+-(void)setAutoLabelHeight
+{
+    CGSize maximumSize = CGSizeMake(self.frame.size.width, 10000);
+    CGSize labelHeighSize;
+    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+        labelHeighSize = [self.text sizeWithFont: [UIFont fontWithName:@"Helvetica" size:14.0f]constrainedToSize:maximumSize lineBreakMode:NSLineBreakByWordWrapping];
+        
+    }else if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+        NSRange range=NSMakeRange(0, self.text.length);
+        NSDictionary *dic=[self.attributedText attributesAtIndex:0 effectiveRange:&range];
+        labelHeighSize=[self.text boundingRectWithSize:labelHeighSize options:NSStringDrawingUsesFontLeading attributes:dic context:nil].size;
+    }
+    self.frame=CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, labelHeighSize.height);
+}
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3087D5218E26E1300043BDC /* helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3087D5118E26E1200043BDC /* helper.m */; };
 		A30BB7D318DD2FC700FB6420 /* yunnan@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7D218DD2FC700FB6420 /* yunnan@2x.jpg */; };
 		A30BB7DE18DD332D00FB6420 /* daocheng.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7D918DD332D00FB6420 /* daocheng.jpg */; };
 		A30BB7DF18DD332D00FB6420 /* daocheng@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7DA18DD332D00FB6420 /* daocheng@2x.jpg */; };
@@ -33,9 +34,13 @@
 		A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */; };
 		A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */; };
 		A3FFA40418E07B870077C148 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFA40318E07B870077C148 /* ImgCell.m */; };
+		A3FFEDC518E1B2F300B96AA1 /* ForegroundInfo2View.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */; };
+		A3FFEDC818E1BBC000B96AA1 /* ForegroundInfo_label.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3087D5018E26E1200043BDC /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		A3087D5118E26E1200043BDC /* helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helper.m; sourceTree = "<group>"; };
 		A30BB7D218DD2FC700FB6420 /* yunnan@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yunnan@2x.jpg"; sourceTree = "<group>"; };
 		A30BB7D918DD332D00FB6420 /* daocheng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daocheng.jpg; sourceTree = "<group>"; };
 		A30BB7DA18DD332D00FB6420 /* daocheng@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "daocheng@2x.jpg"; sourceTree = "<group>"; };
@@ -74,6 +79,10 @@
 		A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+customize.m"; sourceTree = "<group>"; };
 		A3FFA40218E07B870077C148 /* ImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgCell.h; path = View/ImgCell.h; sourceTree = "<group>"; };
 		A3FFA40318E07B870077C148 /* ImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgCell.m; path = View/ImgCell.m; sourceTree = "<group>"; };
+		A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForegroundInfo2View.h; path = View/ForegroundInfo2View.h; sourceTree = "<group>"; };
+		A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForegroundInfo2View.m; path = View/ForegroundInfo2View.m; sourceTree = "<group>"; };
+		A3FFEDC618E1BBC000B96AA1 /* ForegroundInfo_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo_label.h; sourceTree = "<group>"; };
+		A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo_label.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +198,8 @@
 				A374082C18D97D33003D8D36 /* InfoPlist.strings */,
 				A374082F18D97D33003D8D36 /* main.m */,
 				A374083118D97D33003D8D36 /* What's Weather-Prefix.pch */,
+				A3087D5018E26E1200043BDC /* helper.h */,
+				A3087D5118E26E1200043BDC /* helper.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,6 +224,10 @@
 				A32D9D4A18DACB08002746B4 /* StartingLogoView.m */,
 				A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */,
 				A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */,
+				A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */,
+				A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */,
+				A3FFEDC618E1BBC000B96AA1 /* ForegroundInfo_label.h */,
+				A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -308,7 +323,10 @@
 				A374083018D97D33003D8D36 /* main.m in Sources */,
 				A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */,
 				A3FFA40418E07B870077C148 /* ImgCell.m in Sources */,
+				A3087D5218E26E1300043BDC /* helper.m in Sources */,
+				A3FFEDC818E1BBC000B96AA1 /* ForegroundInfo_label.m in Sources */,
 				A374083A18D97D33003D8D36 /* WeatherViewController.m in Sources */,
+				A3FFEDC518E1B2F300B96AA1 /* ForegroundInfo2View.m in Sources */,
 				A32D9D4B18DACB08002746B4 /* StartingLogoView.m in Sources */,
 				A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */,
 				A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */,

@@ -10,10 +10,9 @@
 #import "UILabel+customize.h"
 @interface ForegroundInfoView : UIView
 
-@property (strong,nonatomic) NSMutableArray *viewArray;
-@property (strong,nonatomic) UIView *temperatureView;
-@property (strong,nonatomic) UILabel *dateLabel;
-@property (strong,nonatomic) UILabel *temperatureRange;
 
 -(void)updateCurrentTemperature:(NSInteger)temperature withWeather:(NSString *)weather;
+-(void)updateDateLabel;
+-(void)updateTemperatureRange;
+
 @end

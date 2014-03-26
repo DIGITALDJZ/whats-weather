@@ -9,6 +9,9 @@
 #import "ForegroundInfoView.h"
 @interface ForegroundInfoView()
 @property (strong,nonatomic) UILabel *temperatureLabel;
+@property (strong,nonatomic) UIView *temperatureView;
+@property (strong,nonatomic) UILabel *dateLabel;
+@property (strong,nonatomic) UILabel *temperatureRange;
 @end
 @implementation ForegroundInfoView
 
@@ -16,11 +19,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        self.temperatureView.backgroundColor=[UIColor blueColor];
-        self.temperatureView=[[UIView alloc]initWithFrame:CGRectMake(0,0,320,60)];
+
+        self.temperatureView=[[UIView alloc]initWithFrame:CGRectMake(0,15,320,60)];
         self.temperatureLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 180,60)];
-        //self.temperatureLabel.text=@"11111";
         
         [self.temperatureView addSubview:self.temperatureLabel];
         [self.temperatureLabel customizeLabelwithFontName:@"HelveticaNeue-UltraLight" fontSize:64 color:[UIColor whiteColor] alignment:NSTextAlignmentRight];
@@ -34,7 +35,6 @@
         for (id view in viewArray) {
             [self addSubview:view];
         }
-
         //hardcode
         [self updateCurrentTemperature:28 withWeather:@"sunny"];
         [self updateDateLabel];
@@ -43,7 +43,7 @@
     return self;
 }
 -(void)updateCurrentTemperature:(NSInteger)temperature withWeather:(NSString *)weather{
-    UIImageView *weatherImg=[[UIImageView alloc]initWithFrame:CGRectMake(185, 0, 50, 50)];
+    UIImageView *weatherImg=[[UIImageView alloc]initWithFrame:CGRectMake(185, 5, 50, 50)];
     weatherImg.image=[UIImage imageNamed:@"ico_sunny"];
     [self.temperatureView addSubview:weatherImg];
     self.temperatureLabel.text=[NSString stringWithFormat:@"%d°",28];
@@ -54,9 +54,7 @@
 -(void)updateTemperatureRange{
     self.temperatureRange.text=@"↓18° ↑28°";
 }
--(void)updateBackground{
-    
-}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

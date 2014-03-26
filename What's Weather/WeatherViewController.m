@@ -17,6 +17,9 @@
 @property (strong,nonatomic) NSMutableArray *imgArray;
 @property (strong,nonatomic) UICollectionViewTransitionLayout *transitionLayout;
 @property (weak, nonatomic) IBOutlet UICollectionView *locationCollection;
+
+@property (strong,nonatomic) NSArray *foregroundArray;
+
 @end
 
 @implementation WeatherViewController
@@ -37,6 +40,8 @@
     [self addTopbarIco];
     [self.view bringSubviewToFront:self.topbarView];
     self.imgArray=[[NSMutableArray alloc]initWithArray:@[[UIImage imageNamed:@"yunnan.jpg"],[UIImage imageNamed:@"daocheng.jpg"],[UIImage imageNamed:@"shanghai.jpg"]]];
+    self.locationCollection.frame=CGRectMake(0, 0, 320, SCREEN_SIZE.height);
+
 }
 
 - (BOOL)shouldAutorotate
@@ -53,9 +58,7 @@
 {
     
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0){
-        
         [super setAutomaticallyAdjustsScrollViewInsets:automaticallyAdjustsScrollViewInsets];
-        
     }
     
 }
@@ -65,13 +68,29 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     // Register nib file for the cell
     ImgCell *imgCell=[cv dequeueReusableCellWithReuseIdentifier:@"imgCell" forIndexPath:indexPath];
+    imgCell.frame=CGRectMake(imgCell.frame.origin.x,imgCell.frame.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.height);
     imgCell.imageView.image =[self.imgArray objectAtIndex:indexPath.row];
     
-    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(0, 0, 320, 132)];
+    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
     [imgCell.foregroundContainer addSubview:foreGroundInfoView];
+    
+    ForegroundInfo2View *foreGroundInfo2View=[[ForegroundInfo2View alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
+    [imgCell.foregroundContainer addSubview:foreGroundInfo2View];
+    foreGroundInfo2View.hidden=YES;
+    
+    self.foregroundArray=@[foreGroundInfoView,foreGroundInfo2View];
+    
+    [imgCell.foregroundContainer bringSubviewToFront:imgCell.foregroundSwitcher_prev];
+    [imgCell.foregroundContainer bringSubviewToFront:imgCell.foregroundSwitcher_next];
+    
+    [imgCell.foregroundSwitcher_prev addTarget:self action:@selector(switchToPrev) forControlEvents:UIControlEventTouchUpInside];
+    [imgCell.foregroundSwitcher_next addTarget:self action:@selector(switchToNext) forControlEvents:UIControlEventTouchUpInside];
 
     return imgCell;
 
+}
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(SCREEN_SIZE.width, SCREEN_SIZE.height);
 }
 -(void)addTopbarIco{
     //待优化
@@ -86,6 +105,39 @@
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+    //NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+}
+
+- (void)switchToPrev{
+    NSInteger currentIndex=[self getCurrentForeground];
+    if (currentIndex==0) {
+        ((UIView *)self.foregroundArray.lastObject).hidden=NO;
+    }else{
+        ((UIView *)[self.foregroundArray objectAtIndex:(currentIndex-1)]).hidden=NO;
+    }
+    
+}
+
+- (void)switchToNext{
+    NSInteger currentIndex=[self getCurrentForeground];
+    if (currentIndex==([self.foregroundArray count]-1)) {
+        ((UIView *)self.foregroundArray.firstObject).hidden=NO;
+    }else{
+        ((UIView *)[self.foregroundArray objectAtIndex:(currentIndex+1)]).hidden=NO;
+    }
+}
+-(NSInteger)getCurrentForeground{
+    NSInteger currentIndex;
+    for (currentIndex=0; currentIndex<self.foregroundArray.count; currentIndex++) {
+        UIView *view=[self.foregroundArray objectAtIndex:currentIndex];
+        if (view.hidden==NO) {
+            break;
+        }
+    }
+    for (UIView *view in self.foregroundArray) {
+        view.hidden=YES;
+    }
+
+    return currentIndex;
 }
 @end

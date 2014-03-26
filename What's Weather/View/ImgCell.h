@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *foregroundContainer;
 @property (weak, nonatomic) IBOutlet UIImageView *foregroundline;
 @property (weak, nonatomic) IBOutlet UIImageView *foregroundImg;
+@property (weak, nonatomic) IBOutlet UIButton *foregroundSwitcher_prev;
+@property (weak, nonatomic) IBOutlet UIButton *foregroundSwitcher_next;
 
 @end
