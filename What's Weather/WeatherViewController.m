@@ -18,7 +18,7 @@
 @property (strong,nonatomic) UICollectionViewTransitionLayout *transitionLayout;
 @property (weak, nonatomic) IBOutlet UICollectionView *locationCollection;
 
-@property (strong,nonatomic) NSArray *foregroundArray;
+
 
 @end
 
@@ -71,17 +71,14 @@
     imgCell.frame=CGRectMake(imgCell.frame.origin.x,imgCell.frame.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.height);
     imgCell.imageView.image =[self.imgArray objectAtIndex:indexPath.row];
     
-    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
-    [imgCell.foregroundContainer addSubview:foreGroundInfoView];
+    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(25, 0, 270, 140)];
+    [imgCell.foregroundInfoContainer addSubview:foreGroundInfoView];
     
-    ForegroundInfo2View *foreGroundInfo2View=[[ForegroundInfo2View alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
-    [imgCell.foregroundContainer addSubview:foreGroundInfo2View];
+    ForegroundInfo2View *foreGroundInfo2View=[[ForegroundInfo2View alloc]initWithFrame:CGRectMake(25, 0, 270, 140)];
+    [imgCell.foregroundInfoContainer addSubview:foreGroundInfo2View];
     foreGroundInfo2View.hidden=YES;
     
-    self.foregroundArray=@[foreGroundInfoView,foreGroundInfo2View];
-    
-    [imgCell.foregroundContainer bringSubviewToFront:imgCell.foregroundSwitcher_prev];
-    [imgCell.foregroundContainer bringSubviewToFront:imgCell.foregroundSwitcher_next];
+    imgCell.foregroundArray=@[foreGroundInfoView,foreGroundInfo2View];
     
     [imgCell.foregroundSwitcher_prev addTarget:self action:@selector(switchToPrev) forControlEvents:UIControlEventTouchUpInside];
     [imgCell.foregroundSwitcher_next addTarget:self action:@selector(switchToNext) forControlEvents:UIControlEventTouchUpInside];
@@ -105,39 +102,19 @@
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    //NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
 }
 
 - (void)switchToPrev{
-    NSInteger currentIndex=[self getCurrentForeground];
-    if (currentIndex==0) {
-        ((UIView *)self.foregroundArray.lastObject).hidden=NO;
-    }else{
-        ((UIView *)[self.foregroundArray objectAtIndex:(currentIndex-1)]).hidden=NO;
-    }
-    
+    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+    ImgCell *cell=(ImgCell *)[self.locationCollection cellForItemAtIndexPath:indexPath];
+    [cell switchToPrevForeground];
 }
 
 - (void)switchToNext{
-    NSInteger currentIndex=[self getCurrentForeground];
-    if (currentIndex==([self.foregroundArray count]-1)) {
-        ((UIView *)self.foregroundArray.firstObject).hidden=NO;
-    }else{
-        ((UIView *)[self.foregroundArray objectAtIndex:(currentIndex+1)]).hidden=NO;
-    }
+    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+    ImgCell *cell=(ImgCell *)[self.locationCollection cellForItemAtIndexPath:indexPath];
+    [cell switchToNextForeground];
 }
--(NSInteger)getCurrentForeground{
-    NSInteger currentIndex;
-    for (currentIndex=0; currentIndex<self.foregroundArray.count; currentIndex++) {
-        UIView *view=[self.foregroundArray objectAtIndex:currentIndex];
-        if (view.hidden==NO) {
-            break;
-        }
-    }
-    for (UIView *view in self.foregroundArray) {
-        view.hidden=YES;
-    }
 
-    return currentIndex;
-}
 @end

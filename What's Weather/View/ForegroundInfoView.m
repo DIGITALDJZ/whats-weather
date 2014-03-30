@@ -19,14 +19,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-
-        self.temperatureView=[[UIView alloc]initWithFrame:CGRectMake(0,15,320,60)];
-        self.temperatureLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 180,60)];
+        self.temperatureView=[[UIView alloc]initWithFrame:CGRectMake(0,15,270,60)];
+        self.temperatureLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 155,60)];
         
         [self.temperatureView addSubview:self.temperatureLabel];
         [self.temperatureLabel customizeLabelwithFontName:@"HelveticaNeue-UltraLight" fontSize:64 color:[UIColor whiteColor] alignment:NSTextAlignmentRight];
-        self.dateLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 80, 320, 21)];
-        self.temperatureRange=[[UILabel alloc]initWithFrame:CGRectMake(0, 103, 320, 21)];
+        self.dateLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 80, 270, 21)];
+        self.temperatureRange=[[UILabel alloc]initWithFrame:CGRectMake(0, 103, 270, 21)];
         [self.dateLabel customizeLabelwithFontName:@"HelveticaNeueLTStd-Th" fontSize:15 color:[UIColor whiteColor] alignment:NSTextAlignmentCenter];
         [self.temperatureRange customizeLabelwithFontName:@"HelveticaNeueLTStd-Th" fontSize:15 color:[UIColor whiteColor] alignment:NSTextAlignmentCenter];
         
@@ -43,7 +42,7 @@
     return self;
 }
 -(void)updateCurrentTemperature:(NSInteger)temperature withWeather:(NSString *)weather{
-    UIImageView *weatherImg=[[UIImageView alloc]initWithFrame:CGRectMake(185, 5, 50, 50)];
+    UIImageView *weatherImg=[[UIImageView alloc]initWithFrame:CGRectMake(160, 5, 50, 50)];
     weatherImg.image=[UIImage imageNamed:@"ico_sunny"];
     [self.temperatureView addSubview:weatherImg];
     self.temperatureLabel.text=[NSString stringWithFormat:@"%d°",28];

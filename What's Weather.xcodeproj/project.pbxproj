@@ -33,6 +33,7 @@
 		A374086218D9C221003D8D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A374086118D9C221003D8D36 /* QuartzCore.framework */; };
 		A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */; };
 		A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */; };
+		A3FED3D418E43EBC00B6B0D9 /* ForegroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */; };
 		A3FFA40418E07B870077C148 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFA40318E07B870077C148 /* ImgCell.m */; };
 		A3FFEDC518E1B2F300B96AA1 /* ForegroundInfo2View.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */; };
 		A3FFEDC818E1BBC000B96AA1 /* ForegroundInfo_label.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */; };
@@ -77,6 +78,8 @@
 		A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForegroundInfoView.m; path = View/ForegroundInfoView.m; sourceTree = "<group>"; };
 		A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+customize.h"; sourceTree = "<group>"; };
 		A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+customize.m"; sourceTree = "<group>"; };
+		A3FED3D218E43EBC00B6B0D9 /* ForegroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundView.h; sourceTree = "<group>"; };
+		A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundView.m; sourceTree = "<group>"; };
 		A3FFA40218E07B870077C148 /* ImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgCell.h; path = View/ImgCell.h; sourceTree = "<group>"; };
 		A3FFA40318E07B870077C148 /* ImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgCell.m; path = View/ImgCell.m; sourceTree = "<group>"; };
 		A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForegroundInfo2View.h; path = View/ForegroundInfo2View.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				A3FFA40318E07B870077C148 /* ImgCell.m */,
 				A32D9D4918DACB08002746B4 /* StartingLogoView.h */,
 				A32D9D4A18DACB08002746B4 /* StartingLogoView.m */,
+				A3FED3D218E43EBC00B6B0D9 /* ForegroundView.h */,
+				A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */,
 				A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */,
 				A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */,
 				A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */,
@@ -330,6 +335,7 @@
 				A32D9D4B18DACB08002746B4 /* StartingLogoView.m in Sources */,
 				A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */,
 				A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */,
+				A3FED3D418E43EBC00B6B0D9 /* ForegroundView.m in Sources */,
 				A374083418D97D33003D8D36 /* WeatherAppDelegate.m in Sources */,
 				A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */,
 			);

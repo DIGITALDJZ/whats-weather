@@ -91,7 +91,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-T7-Vec">
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-T7-Vec" userLabel="Foreground">
                                                     <rect key="frame" x="0.0" y="428" width="320" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
@@ -103,6 +103,11 @@
                                                             <rect key="frame" x="0.0" y="4" width="320" height="136"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60O-BA-aEw" userLabel="infoContainer">
+                                                            <rect key="frame" x="0.0" y="4" width="320" height="136"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-DN-fLH">
                                                             <rect key="frame" x="5" y="45" width="15" height="43"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,8 +139,9 @@
                                         </constraints>
                                         <size key="customSize" width="320" height="568"/>
                                         <connections>
-                                            <outlet property="foregroundContainer" destination="p7D-T7-Vec" id="bK0-hf-y64"/>
+                                            <outlet property="foreground" destination="p7D-T7-Vec" id="WkY-Ba-PXq"/>
                                             <outlet property="foregroundImg" destination="h8r-0c-sOv" id="bkR-7r-B79"/>
+                                            <outlet property="foregroundInfoContainer" destination="60O-BA-aEw" id="cyr-LZ-56H"/>
                                             <outlet property="foregroundSwitcher_next" destination="Hwt-Zu-LIY" id="ClV-Vr-cYU"/>
                                             <outlet property="foregroundSwitcher_prev" destination="yZT-DN-fLH" id="iCy-M2-ORl"/>
                                             <outlet property="foregroundline" destination="6lJ-rC-PKE" id="6hj-Ri-bHn"/>
