@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UILabel+customize.h"
-#import "ForegroundView.h"
-@interface ForegroundInfoView : ForegroundView
+@interface ForegroundInfoView : UIView
 
 
 -(void)updateCurrentTemperature:(NSInteger)temperature withWeather:(NSString *)weather;

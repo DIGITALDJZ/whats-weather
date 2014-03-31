@@ -16,8 +16,13 @@
 		A312784F18DEB29100D2B72A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A312784E18DEB29100D2B72A /* Images.xcassets */; };
 		A312785B18DED2C300D2B72A /* fzxh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A312785A18DED2C300D2B72A /* fzxh.ttf */; };
 		A3171E8D18E01FB8008CDF13 /* HelveticaNeueLTStd-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3171E8C18E01BE5008CDF13 /* HelveticaNeueLTStd-Th.otf */; };
+		A325572F18E9597F00B83CD0 /* ForegroundInfo2View.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */; };
+		A325573118E9597F00B83CD0 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572718E9597F00B83CD0 /* ForegroundInfoView.m */; };
+		A325573218E9597F00B83CD0 /* ForegroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572918E9597F00B83CD0 /* ForegroundView.m */; };
+		A325573418E9597F00B83CD0 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572C18E9597F00B83CD0 /* ImgCell.m */; };
+		A325573518E9597F00B83CD0 /* StartingLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572E18E9597F00B83CD0 /* StartingLogoView.m */; };
+		A325573818E959C900B83CD0 /* ForegroundInfo_label.m in Sources */ = {isa = PBXBuildFile; fileRef = A325573718E959C900B83CD0 /* ForegroundInfo_label.m */; };
 		A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D9D4718DAC76A002746B4 /* StartingViewController.m */; };
-		A32D9D4B18DACB08002746B4 /* StartingLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D9D4A18DACB08002746B4 /* StartingLogoView.m */; };
 		A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D9D4D18DACDD0002746B4 /* StartingSegue.m */; };
 		A32D9D5218DAE974002746B4 /* yunnan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A32D9D5118DAE974002746B4 /* yunnan.jpg */; };
 		A374082418D97D33003D8D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A374082318D97D33003D8D36 /* Foundation.framework */; };
@@ -31,12 +36,7 @@
 		A374085B18D9BAB7003D8D36 /* start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A374085918D9BAB7003D8D36 /* start.jpg */; };
 		A374085C18D9BAB7003D8D36 /* start@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A374085A18D9BAB7003D8D36 /* start@2x.jpg */; };
 		A374086218D9C221003D8D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A374086118D9C221003D8D36 /* QuartzCore.framework */; };
-		A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */; };
 		A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */; };
-		A3FED3D418E43EBC00B6B0D9 /* ForegroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */; };
-		A3FFA40418E07B870077C148 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFA40318E07B870077C148 /* ImgCell.m */; };
-		A3FFEDC518E1B2F300B96AA1 /* ForegroundInfo2View.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */; };
-		A3FFEDC818E1BBC000B96AA1 /* ForegroundInfo_label.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +50,20 @@
 		A312784E18DEB29100D2B72A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "What's Weather/Images.xcassets"; sourceTree = "<group>"; };
 		A312785A18DED2C300D2B72A /* fzxh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fzxh.ttf; sourceTree = "<group>"; };
 		A3171E8C18E01BE5008CDF13 /* HelveticaNeueLTStd-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueLTStd-Th.otf"; sourceTree = "<group>"; };
+		A325572218E9597F00B83CD0 /* ForegroundInfo2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo2View.h; sourceTree = "<group>"; };
+		A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo2View.m; sourceTree = "<group>"; };
+		A325572618E9597F00B83CD0 /* ForegroundInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfoView.h; sourceTree = "<group>"; };
+		A325572718E9597F00B83CD0 /* ForegroundInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfoView.m; sourceTree = "<group>"; };
+		A325572818E9597F00B83CD0 /* ForegroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundView.h; sourceTree = "<group>"; };
+		A325572918E9597F00B83CD0 /* ForegroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundView.m; sourceTree = "<group>"; };
+		A325572B18E9597F00B83CD0 /* ImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgCell.h; sourceTree = "<group>"; };
+		A325572C18E9597F00B83CD0 /* ImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgCell.m; sourceTree = "<group>"; };
+		A325572D18E9597F00B83CD0 /* StartingLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingLogoView.h; sourceTree = "<group>"; };
+		A325572E18E9597F00B83CD0 /* StartingLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingLogoView.m; sourceTree = "<group>"; };
+		A325573618E959C900B83CD0 /* ForegroundInfo_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo_label.h; sourceTree = "<group>"; };
+		A325573718E959C900B83CD0 /* ForegroundInfo_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo_label.m; sourceTree = "<group>"; };
 		A32D9D4618DAC76A002746B4 /* StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingViewController.h; sourceTree = "<group>"; };
 		A32D9D4718DAC76A002746B4 /* StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingViewController.m; sourceTree = "<group>"; };
-		A32D9D4918DACB08002746B4 /* StartingLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartingLogoView.h; path = View/StartingLogoView.h; sourceTree = "<group>"; };
-		A32D9D4A18DACB08002746B4 /* StartingLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartingLogoView.m; path = View/StartingLogoView.m; sourceTree = "<group>"; };
 		A32D9D4C18DACDD0002746B4 /* StartingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingSegue.h; sourceTree = "<group>"; };
 		A32D9D4D18DACDD0002746B4 /* StartingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingSegue.m; sourceTree = "<group>"; };
 		A32D9D5118DAE974002746B4 /* yunnan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunnan.jpg; sourceTree = "<group>"; };
@@ -74,18 +84,8 @@
 		A374085918D9BAB7003D8D36 /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = start.jpg; sourceTree = "<group>"; };
 		A374085A18D9BAB7003D8D36 /* start@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "start@2x.jpg"; sourceTree = "<group>"; };
 		A374086118D9C221003D8D36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForegroundInfoView.h; path = View/ForegroundInfoView.h; sourceTree = "<group>"; };
-		A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForegroundInfoView.m; path = View/ForegroundInfoView.m; sourceTree = "<group>"; };
 		A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+customize.h"; sourceTree = "<group>"; };
 		A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+customize.m"; sourceTree = "<group>"; };
-		A3FED3D218E43EBC00B6B0D9 /* ForegroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundView.h; sourceTree = "<group>"; };
-		A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundView.m; sourceTree = "<group>"; };
-		A3FFA40218E07B870077C148 /* ImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgCell.h; path = View/ImgCell.h; sourceTree = "<group>"; };
-		A3FFA40318E07B870077C148 /* ImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgCell.m; path = View/ImgCell.m; sourceTree = "<group>"; };
-		A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForegroundInfo2View.h; path = View/ForegroundInfo2View.h; sourceTree = "<group>"; };
-		A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForegroundInfo2View.m; path = View/ForegroundInfo2View.m; sourceTree = "<group>"; };
-		A3FFEDC618E1BBC000B96AA1 /* ForegroundInfo_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo_label.h; sourceTree = "<group>"; };
-		A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo_label.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +119,25 @@
 				A30BB7DD18DD332D00FB6420 /* shanghai@2x.jpg */,
 			);
 			path = shanghai;
+			sourceTree = "<group>";
+		};
+		A325572118E9597F00B83CD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A325573618E959C900B83CD0 /* ForegroundInfo_label.h */,
+				A325573718E959C900B83CD0 /* ForegroundInfo_label.m */,
+				A325572218E9597F00B83CD0 /* ForegroundInfo2View.h */,
+				A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */,
+				A325572618E9597F00B83CD0 /* ForegroundInfoView.h */,
+				A325572718E9597F00B83CD0 /* ForegroundInfoView.m */,
+				A325572818E9597F00B83CD0 /* ForegroundView.h */,
+				A325572918E9597F00B83CD0 /* ForegroundView.m */,
+				A325572B18E9597F00B83CD0 /* ImgCell.h */,
+				A325572C18E9597F00B83CD0 /* ImgCell.m */,
+				A325572D18E9597F00B83CD0 /* StartingLogoView.h */,
+				A325572E18E9597F00B83CD0 /* StartingLogoView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A32D9D4F18DAE974002746B4 /* landscape */ = {
@@ -187,7 +206,7 @@
 				A32D9D4D18DACDD0002746B4 /* StartingSegue.m */,
 				A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */,
 				A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */,
-				A374086018D9BFFF003D8D36 /* View */,
+				A325572118E9597F00B83CD0 /* View */,
 				A3FFA3FE18E073880077C148 /* model */,
 				A374082A18D97D33003D8D36 /* Supporting Files */,
 			);
@@ -216,25 +235,6 @@
 			);
 			name = images;
 			path = "What's Weather/images";
-			sourceTree = "<group>";
-		};
-		A374086018D9BFFF003D8D36 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A3FFA40218E07B870077C148 /* ImgCell.h */,
-				A3FFA40318E07B870077C148 /* ImgCell.m */,
-				A32D9D4918DACB08002746B4 /* StartingLogoView.h */,
-				A32D9D4A18DACB08002746B4 /* StartingLogoView.m */,
-				A3FED3D218E43EBC00B6B0D9 /* ForegroundView.h */,
-				A3FED3D318E43EBC00B6B0D9 /* ForegroundView.m */,
-				A3E67ACF18E183CB0072CEB1 /* ForegroundInfoView.h */,
-				A3E67AD018E183CB0072CEB1 /* ForegroundInfoView.m */,
-				A3FFEDC318E1B2F300B96AA1 /* ForegroundInfo2View.h */,
-				A3FFEDC418E1B2F300B96AA1 /* ForegroundInfo2View.m */,
-				A3FFEDC618E1BBC000B96AA1 /* ForegroundInfo_label.h */,
-				A3FFEDC718E1BBC000B96AA1 /* ForegroundInfo_label.m */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		A3FFA3FE18E073880077C148 /* model */ = {
@@ -326,17 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A374083018D97D33003D8D36 /* main.m in Sources */,
-				A3E67AD118E183CB0072CEB1 /* ForegroundInfoView.m in Sources */,
-				A3FFA40418E07B870077C148 /* ImgCell.m in Sources */,
 				A3087D5218E26E1300043BDC /* helper.m in Sources */,
-				A3FFEDC818E1BBC000B96AA1 /* ForegroundInfo_label.m in Sources */,
 				A374083A18D97D33003D8D36 /* WeatherViewController.m in Sources */,
-				A3FFEDC518E1B2F300B96AA1 /* ForegroundInfo2View.m in Sources */,
-				A32D9D4B18DACB08002746B4 /* StartingLogoView.m in Sources */,
+				A325573118E9597F00B83CD0 /* ForegroundInfoView.m in Sources */,
 				A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */,
+				A325573218E9597F00B83CD0 /* ForegroundView.m in Sources */,
+				A325572F18E9597F00B83CD0 /* ForegroundInfo2View.m in Sources */,
+				A325573818E959C900B83CD0 /* ForegroundInfo_label.m in Sources */,
 				A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */,
-				A3FED3D418E43EBC00B6B0D9 /* ForegroundView.m in Sources */,
 				A374083418D97D33003D8D36 /* WeatherAppDelegate.m in Sources */,
+				A325573418E9597F00B83CD0 /* ImgCell.m in Sources */,
+				A325573518E9597F00B83CD0 /* StartingLogoView.m in Sources */,
 				A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ForegroundInfo_label.h"
-#import "ForegroundView.h"
-@interface ForegroundInfo2View : ForegroundView
+
+@interface ForegroundInfo2View : UIView
 @property (strong,nonatomic) NSMutableArray *viewArray;
 @end

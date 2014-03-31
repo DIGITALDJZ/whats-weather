@@ -12,14 +12,9 @@
 #import "ForegroundInfo2View.h"
 @interface ImgCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIView *foreground;
-@property (weak, nonatomic) IBOutlet UIView *foregroundInfoContainer;
-@property (weak, nonatomic) IBOutlet UIImageView *foregroundline;
-@property (weak, nonatomic) IBOutlet UIImageView *foregroundImg;
-@property (weak, nonatomic) IBOutlet UIButton *foregroundSwitcher_prev;
-@property (weak, nonatomic) IBOutlet UIButton *foregroundSwitcher_next;
-@property (strong,nonatomic) NSArray *foregroundArray;
-@property (nonatomic) BOOL *isRemoved;
--(void)switchToNextForeground;
--(void)switchToPrevForeground;
+//@property (weak, nonatomic) IBOutlet UIView *foreground;
+//@property (weak, nonatomic) IBOutlet UIView *foregroundInfoContainer;
+
+-(void)foregroundViewAdd;
+
 @end

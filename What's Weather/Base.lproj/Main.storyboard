@@ -91,47 +91,16 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-T7-Vec" userLabel="Foreground">
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-dL-BnZ">
                                                     <rect key="frame" x="0.0" y="428" width="320" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foreground_line" translatesAutoresizingMaskIntoConstraints="NO" id="6lJ-rC-PKE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="4"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="h8r-0c-sOv">
-                                                            <rect key="frame" x="0.0" y="4" width="320" height="136"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60O-BA-aEw" userLabel="infoContainer">
-                                                            <rect key="frame" x="0.0" y="4" width="320" height="136"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </view>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-DN-fLH">
-                                                            <rect key="frame" x="5" y="45" width="15" height="43"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" image="left">
-                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwt-Zu-LIY">
-                                                            <rect key="frame" x="300" y="45" width="15" height="43"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" image="right">
-                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="hjf-J8-T00"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fsj-dL-BnZ" secondAttribute="bottom" id="1rf-oA-unN"/>
                                             <constraint firstAttribute="bottom" secondItem="R2g-Rl-C7P" secondAttribute="bottom" id="Dwd-cb-r1j"/>
                                             <constraint firstItem="R2g-Rl-C7P" firstAttribute="leading" secondItem="XeF-F3-CCw" secondAttribute="leading" id="XWp-YL-R3O"/>
                                             <constraint firstItem="R2g-Rl-C7P" firstAttribute="top" secondItem="XeF-F3-CCw" secondAttribute="top" id="f0S-L2-UAZ"/>
@@ -139,12 +108,7 @@
                                         </constraints>
                                         <size key="customSize" width="320" height="568"/>
                                         <connections>
-                                            <outlet property="foreground" destination="p7D-T7-Vec" id="WkY-Ba-PXq"/>
-                                            <outlet property="foregroundImg" destination="h8r-0c-sOv" id="bkR-7r-B79"/>
-                                            <outlet property="foregroundInfoContainer" destination="60O-BA-aEw" id="cyr-LZ-56H"/>
-                                            <outlet property="foregroundSwitcher_next" destination="Hwt-Zu-LIY" id="ClV-Vr-cYU"/>
-                                            <outlet property="foregroundSwitcher_prev" destination="yZT-DN-fLH" id="iCy-M2-ORl"/>
-                                            <outlet property="foregroundline" destination="6lJ-rC-PKE" id="6hj-Ri-bHn"/>
+                                            <outlet property="foregroundViewWrap" destination="fsj-dL-BnZ" id="bt0-ds-NJQ"/>
                                             <outlet property="imageView" destination="R2g-Rl-C7P" id="3Cl-El-vP8"/>
                                         </connections>
                                     </collectionViewCell>
@@ -205,13 +169,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue" width="320" height="135"/>
-        <image name="foreground_line" width="960" height="4"/>
         <image name="ico_category" width="20" height="20"/>
         <image name="ico_pic" width="20" height="20"/>
         <image name="launchLogo" width="205" height="160"/>
-        <image name="left" width="15" height="43"/>
-        <image name="right" width="15" height="43"/>
         <image name="start.jpg" width="320" height="568"/>
         <image name="yunnan.jpg" width="320" height="568"/>
     </resources>

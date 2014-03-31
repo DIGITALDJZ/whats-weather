@@ -15,9 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *topbarView;
 @property (weak, nonatomic) IBOutlet UILabel *topbarTitle;
 @property (strong,nonatomic) NSMutableArray *imgArray;
-@property (strong,nonatomic) UICollectionViewTransitionLayout *transitionLayout;
 @property (weak, nonatomic) IBOutlet UICollectionView *locationCollection;
-
 
 
 @end
@@ -39,7 +37,7 @@
     [super viewDidLoad];
     [self addTopbarIco];
     [self.view bringSubviewToFront:self.topbarView];
-    self.imgArray=[[NSMutableArray alloc]initWithArray:@[[UIImage imageNamed:@"yunnan.jpg"],[UIImage imageNamed:@"daocheng.jpg"],[UIImage imageNamed:@"shanghai.jpg"]]];
+    self.imgArray=[[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"yunnan.jpg"],[UIImage imageNamed:@"daocheng.jpg"],[UIImage imageNamed:@"shanghai.jpg"], nil];
     self.locationCollection.frame=CGRectMake(0, 0, 320, SCREEN_SIZE.height);
 
 }
@@ -68,21 +66,14 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     // Register nib file for the cell
     ImgCell *imgCell=[cv dequeueReusableCellWithReuseIdentifier:@"imgCell" forIndexPath:indexPath];
+
     imgCell.frame=CGRectMake(imgCell.frame.origin.x,imgCell.frame.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.height);
     imgCell.imageView.image =[self.imgArray objectAtIndex:indexPath.row];
-    
-    ForegroundInfoView *foreGroundInfoView=[[ForegroundInfoView alloc]initWithFrame:CGRectMake(25, 0, 270, 140)];
-    [imgCell.foregroundInfoContainer addSubview:foreGroundInfoView];
-    
-    ForegroundInfo2View *foreGroundInfo2View=[[ForegroundInfo2View alloc]initWithFrame:CGRectMake(25, 0, 270, 140)];
-    [imgCell.foregroundInfoContainer addSubview:foreGroundInfo2View];
-    foreGroundInfo2View.hidden=YES;
-    
-    imgCell.foregroundArray=@[foreGroundInfoView,foreGroundInfo2View];
-    
-    [imgCell.foregroundSwitcher_prev addTarget:self action:@selector(switchToPrev) forControlEvents:UIControlEventTouchUpInside];
-    [imgCell.foregroundSwitcher_next addTarget:self action:@selector(switchToNext) forControlEvents:UIControlEventTouchUpInside];
 
+
+    [imgCell foregroundViewAdd];
+
+    //[imgCell foregroundInfoAdd];
     return imgCell;
 
 }
@@ -105,16 +96,6 @@
     NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
 }
 
-- (void)switchToPrev{
-    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
-    ImgCell *cell=(ImgCell *)[self.locationCollection cellForItemAtIndexPath:indexPath];
-    [cell switchToPrevForeground];
-}
 
-- (void)switchToNext{
-    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
-    ImgCell *cell=(ImgCell *)[self.locationCollection cellForItemAtIndexPath:indexPath];
-    [cell switchToNextForeground];
-}
 
 @end

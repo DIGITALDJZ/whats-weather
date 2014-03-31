@@ -7,6 +7,13 @@
 //
 
 #import "ImgCell.h"
+const NSUInteger infoTypeCount =2;
+@interface ImgCell()
+
+@property (strong,nonatomic) ForegroundView *foregroundView;
+@property (weak, nonatomic) IBOutlet UIView *foregroundViewWrap;
+
+@end
 
 @implementation ImgCell
 
@@ -21,49 +28,19 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self=[super initWithCoder:aDecoder];
     if (self) {
-        // Initialization code
+        // Initialization codex
         
     }
     return self;
 }
-
--(void)switchToNextForeground{
-    NSInteger currentIndex=0;
-    for (currentIndex=0; currentIndex<self.foregroundArray.count; currentIndex++) {
-        ForegroundView *view=[self.foregroundArray objectAtIndex:currentIndex];
-        if (view.hidden==NO) {
-            view.hidden=YES;
-            break;
-        }
-    }
-    if (currentIndex==(self.foregroundArray.count-1)) {
-        ((ForegroundView *)self.foregroundArray.firstObject).hidden=NO;
-    }else{
-        ((ForegroundView *)[self.foregroundArray objectAtIndex:(currentIndex+1)]).hidden=NO;
-    }
+-(void)foregroundViewAdd{
+    [self.foregroundViewWrap addSubview:self.foregroundView];
+    [self.foregroundView foregroundInfoReset];
 }
--(void)switchToPrevForeground{
-    NSInteger currentIndex=0;
-    for (currentIndex=0; currentIndex<self.foregroundArray.count; currentIndex++) {
-        ForegroundView *view=[self.foregroundArray objectAtIndex:currentIndex];
-        if (view.hidden==NO) {
-            view.hidden=YES;
-            break;
-        }
+-(ForegroundView *)foregroundView{
+    if (!_foregroundView) {
+        _foregroundView=[[ForegroundView alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
     }
-    if (currentIndex==0) {
-        ((ForegroundView *)self.foregroundArray.lastObject).hidden=NO;
-    }else{
-        ((ForegroundView *)[self.foregroundArray objectAtIndex:(currentIndex-1)]).hidden=NO;
-    }
+    return _foregroundView;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end
