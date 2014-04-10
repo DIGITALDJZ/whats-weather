@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ForegroundInfo3View : UIView
+#import "helper.h"
+#import "UILabel+customize.h"
+#import "CircleCollectionView.h"
+#import "CircleLayout.h"
+@interface ForegroundInfo3View : UIView <UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end

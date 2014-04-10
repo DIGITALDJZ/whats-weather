@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ForegroundInfoView.h"
 #import "ForegroundInfo2View.h"
+#import "ForegroundInfo3View.h"
 @interface ForegroundView : UIView
 -(void)foregroundInfoReset;
 @end

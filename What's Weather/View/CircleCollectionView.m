@@ -15,8 +15,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+
     }
     return self;
+}
+- (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
+    self = [super initWithFrame:frame collectionViewLayout:layout];
+    if (self) {
+        // Initialization code
+        CGAffineTransform initRotate=CGAffineTransformMakeRotation(-M_PI_2);
+        [self setTransform:initRotate];
+
+    }
+    return self;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"aa");
 }
 
 /*

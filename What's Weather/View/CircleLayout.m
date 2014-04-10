@@ -94,7 +94,7 @@
 
 #import "CircleLayout.h"
 
-#define ITEM_SIZE 70
+#define ITEM_SIZE 6
 
 @implementation CircleLayout
 
@@ -105,7 +105,8 @@
     CGSize size = self.collectionView.frame.size;
     _cellCount = [[self collectionView] numberOfItemsInSection:0];
     _center = CGPointMake(size.width / 2.0, size.height / 2.0);
-    _radius = MIN(size.width, size.height) / 2.5;
+    _radius = MIN(size.width, size.height) / 2;
+    _radius=_radius-ITEM_SIZE/2;
 }
 
 -(CGSize)collectionViewContentSize
@@ -118,8 +119,8 @@
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:path];
     attributes.size = CGSizeMake(ITEM_SIZE, ITEM_SIZE);
     attributes.center = CGPointMake(_center.x + _radius * cosf(2 * path.item * M_PI / _cellCount),
-                                    _center.y + _radius * sinf(2 * path.item * M_PI / _cellCount));
-    
+                                    _center.y + _radius * sinf(2 * path.item * M_PI / _cellCount)
+                                    );
     return attributes;
 }
 

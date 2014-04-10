@@ -16,6 +16,8 @@
 
 @property (strong,nonatomic) ForegroundInfoView *foreGroundInfoView;
 @property (strong,nonatomic) ForegroundInfo2View *foreGroundInfo2View;
+@property (strong,nonatomic) ForegroundInfo3View *foreGroundInfo3View;
+
 @property (strong,nonatomic) NSArray *foregroundArray;
 @end
 @implementation ForegroundView
@@ -57,12 +59,14 @@
 -(void)foregroundInfoAdd{
     [self.foregroundInfoContainer addSubview:self.foreGroundInfoView];
     [self.foregroundInfoContainer addSubview:self.foreGroundInfo2View];
-    self.foregroundArray=@[self.foreGroundInfoView,self.foreGroundInfo2View];
+    [self.foregroundInfoContainer addSubview:self.foreGroundInfo3View];
+    self.foregroundArray=@[self.foreGroundInfoView,self.foreGroundInfo2View,self.foreGroundInfo3View];
     
 }
 -(void)foregroundInfoReset{
     self.foreGroundInfoView.hidden=NO;
     self.foreGroundInfo2View.hidden=YES;
+    self.foreGroundInfo3View.hidden=YES;
 }
 -(ForegroundInfoView *)foreGroundInfoView{
     if (!_foreGroundInfoView) {
@@ -75,6 +79,12 @@
         _foreGroundInfo2View=[[ForegroundInfo2View alloc] initWithFrame:CGRectMake(0, 0, 270, 140)];
     }
     return _foreGroundInfo2View;
+}
+-(ForegroundInfo3View *)foreGroundInfo3View{
+    if (!_foreGroundInfo3View) {
+        _foreGroundInfo3View=[[ForegroundInfo3View alloc] initWithFrame:CGRectMake(0, 0, 270, 140)];
+    }
+    return _foreGroundInfo3View;
 }
 -(NSArray *)foregroundArray{
     if (!_foregroundArray) {

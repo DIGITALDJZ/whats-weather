@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CircleLayout.h"
 @interface CircleCollectionView : UICollectionView
-
 @end

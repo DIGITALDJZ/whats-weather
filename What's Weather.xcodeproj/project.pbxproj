@@ -13,15 +13,17 @@
 		A30BB7DF18DD332D00FB6420 /* daocheng@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7DA18DD332D00FB6420 /* daocheng@2x.jpg */; };
 		A30BB7E018DD332D00FB6420 /* shanghai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7DC18DD332D00FB6420 /* shanghai.jpg */; };
 		A30BB7E118DD332D00FB6420 /* shanghai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30BB7DD18DD332D00FB6420 /* shanghai@2x.jpg */; };
-		A312784F18DEB29100D2B72A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A312784E18DEB29100D2B72A /* Images.xcassets */; };
 		A312785B18DED2C300D2B72A /* fzxh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A312785A18DED2C300D2B72A /* fzxh.ttf */; };
 		A3171E8D18E01FB8008CDF13 /* HelveticaNeueLTStd-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3171E8C18E01BE5008CDF13 /* HelveticaNeueLTStd-Th.otf */; };
+		A31DA32318EA5130001707B1 /* ForegroundInfo3View.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32218EA5130001707B1 /* ForegroundInfo3View.m */; };
 		A325572F18E9597F00B83CD0 /* ForegroundInfo2View.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */; };
 		A325573118E9597F00B83CD0 /* ForegroundInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572718E9597F00B83CD0 /* ForegroundInfoView.m */; };
 		A325573218E9597F00B83CD0 /* ForegroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572918E9597F00B83CD0 /* ForegroundView.m */; };
 		A325573418E9597F00B83CD0 /* ImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572C18E9597F00B83CD0 /* ImgCell.m */; };
 		A325573518E9597F00B83CD0 /* StartingLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A325572E18E9597F00B83CD0 /* StartingLogoView.m */; };
 		A325573818E959C900B83CD0 /* ForegroundInfo_label.m in Sources */ = {isa = PBXBuildFile; fileRef = A325573718E959C900B83CD0 /* ForegroundInfo_label.m */; };
+		A32B31BF18F4068E00DEA323 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A32B31BE18F4068E00DEA323 /* CircleLayout.m */; };
+		A32B31C218F4075A00DEA323 /* CircleCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32B31C118F4075A00DEA323 /* CircleCollectionView.m */; };
 		A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D9D4718DAC76A002746B4 /* StartingViewController.m */; };
 		A32D9D4E18DACDD0002746B4 /* StartingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D9D4D18DACDD0002746B4 /* StartingSegue.m */; };
 		A32D9D5218DAE974002746B4 /* yunnan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A32D9D5118DAE974002746B4 /* yunnan.jpg */; };
@@ -37,6 +39,7 @@
 		A374085C18D9BAB7003D8D36 /* start@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A374085A18D9BAB7003D8D36 /* start@2x.jpg */; };
 		A374086218D9C221003D8D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A374086118D9C221003D8D36 /* QuartzCore.framework */; };
 		A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */; };
+		A3FE437F18F58CBA00D46B89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FE437E18F58CBA00D46B89 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +50,10 @@
 		A30BB7DA18DD332D00FB6420 /* daocheng@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "daocheng@2x.jpg"; sourceTree = "<group>"; };
 		A30BB7DC18DD332D00FB6420 /* shanghai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shanghai.jpg; sourceTree = "<group>"; };
 		A30BB7DD18DD332D00FB6420 /* shanghai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shanghai@2x.jpg"; sourceTree = "<group>"; };
-		A312784E18DEB29100D2B72A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "What's Weather/Images.xcassets"; sourceTree = "<group>"; };
 		A312785A18DED2C300D2B72A /* fzxh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fzxh.ttf; sourceTree = "<group>"; };
 		A3171E8C18E01BE5008CDF13 /* HelveticaNeueLTStd-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueLTStd-Th.otf"; sourceTree = "<group>"; };
+		A31DA32118EA5130001707B1 /* ForegroundInfo3View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo3View.h; sourceTree = "<group>"; };
+		A31DA32218EA5130001707B1 /* ForegroundInfo3View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo3View.m; sourceTree = "<group>"; };
 		A325572218E9597F00B83CD0 /* ForegroundInfo2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo2View.h; sourceTree = "<group>"; };
 		A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo2View.m; sourceTree = "<group>"; };
 		A325572618E9597F00B83CD0 /* ForegroundInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfoView.h; sourceTree = "<group>"; };
@@ -62,6 +66,10 @@
 		A325572E18E9597F00B83CD0 /* StartingLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingLogoView.m; sourceTree = "<group>"; };
 		A325573618E959C900B83CD0 /* ForegroundInfo_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundInfo_label.h; sourceTree = "<group>"; };
 		A325573718E959C900B83CD0 /* ForegroundInfo_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundInfo_label.m; sourceTree = "<group>"; };
+		A32B31BD18F4068E00DEA323 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		A32B31BE18F4068E00DEA323 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		A32B31C018F4075A00DEA323 /* CircleCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCollectionView.h; sourceTree = "<group>"; };
+		A32B31C118F4075A00DEA323 /* CircleCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCollectionView.m; sourceTree = "<group>"; };
 		A32D9D4618DAC76A002746B4 /* StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingViewController.h; sourceTree = "<group>"; };
 		A32D9D4718DAC76A002746B4 /* StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingViewController.m; sourceTree = "<group>"; };
 		A32D9D4C18DACDD0002746B4 /* StartingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingSegue.h; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 		A374086118D9C221003D8D36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A3E67AD218E189FD0072CEB1 /* UILabel+customize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+customize.h"; sourceTree = "<group>"; };
 		A3E67AD318E189FD0072CEB1 /* UILabel+customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+customize.m"; sourceTree = "<group>"; };
+		A3FE437E18F58CBA00D46B89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "What's Weather/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +135,22 @@
 			children = (
 				A325573618E959C900B83CD0 /* ForegroundInfo_label.h */,
 				A325573718E959C900B83CD0 /* ForegroundInfo_label.m */,
-				A325572218E9597F00B83CD0 /* ForegroundInfo2View.h */,
-				A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */,
 				A325572618E9597F00B83CD0 /* ForegroundInfoView.h */,
 				A325572718E9597F00B83CD0 /* ForegroundInfoView.m */,
+				A325572218E9597F00B83CD0 /* ForegroundInfo2View.h */,
+				A325572318E9597F00B83CD0 /* ForegroundInfo2View.m */,
+				A31DA32118EA5130001707B1 /* ForegroundInfo3View.h */,
+				A31DA32218EA5130001707B1 /* ForegroundInfo3View.m */,
 				A325572818E9597F00B83CD0 /* ForegroundView.h */,
 				A325572918E9597F00B83CD0 /* ForegroundView.m */,
 				A325572B18E9597F00B83CD0 /* ImgCell.h */,
 				A325572C18E9597F00B83CD0 /* ImgCell.m */,
 				A325572D18E9597F00B83CD0 /* StartingLogoView.h */,
 				A325572E18E9597F00B83CD0 /* StartingLogoView.m */,
+				A32B31C018F4075A00DEA323 /* CircleCollectionView.h */,
+				A32B31C118F4075A00DEA323 /* CircleCollectionView.m */,
+				A32B31BD18F4068E00DEA323 /* CircleLayout.h */,
+				A32B31BE18F4068E00DEA323 /* CircleLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,9 +177,9 @@
 		A374081718D97D33003D8D36 = {
 			isa = PBXGroup;
 			children = (
-				A312784E18DEB29100D2B72A /* Images.xcassets */,
 				A312785A18DED2C300D2B72A /* fzxh.ttf */,
 				A3171E8C18E01BE5008CDF13 /* HelveticaNeueLTStd-Th.otf */,
+				A3FE437E18F58CBA00D46B89 /* Images.xcassets */,
 				A374085818D9BAB7003D8D36 /* images */,
 				A374082918D97D33003D8D36 /* What's Weather */,
 				A374082218D97D33003D8D36 /* Frameworks */,
@@ -305,6 +320,7 @@
 				A3171E8D18E01FB8008CDF13 /* HelveticaNeueLTStd-Th.otf in Resources */,
 				A32D9D5218DAE974002746B4 /* yunnan.jpg in Resources */,
 				A374082E18D97D33003D8D36 /* InfoPlist.strings in Resources */,
+				A3FE437F18F58CBA00D46B89 /* Images.xcassets in Resources */,
 				A312785B18DED2C300D2B72A /* fzxh.ttf in Resources */,
 				A374085B18D9BAB7003D8D36 /* start.jpg in Resources */,
 				A30BB7DE18DD332D00FB6420 /* daocheng.jpg in Resources */,
@@ -312,7 +328,6 @@
 				A30BB7D318DD2FC700FB6420 /* yunnan@2x.jpg in Resources */,
 				A374085C18D9BAB7003D8D36 /* start@2x.jpg in Resources */,
 				A30BB7E018DD332D00FB6420 /* shanghai.jpg in Resources */,
-				A312784F18DEB29100D2B72A /* Images.xcassets in Resources */,
 				A374083718D97D33003D8D36 /* Main.storyboard in Resources */,
 				A30BB7E118DD332D00FB6420 /* shanghai@2x.jpg in Resources */,
 			);
@@ -333,9 +348,12 @@
 				A325573218E9597F00B83CD0 /* ForegroundView.m in Sources */,
 				A325572F18E9597F00B83CD0 /* ForegroundInfo2View.m in Sources */,
 				A325573818E959C900B83CD0 /* ForegroundInfo_label.m in Sources */,
+				A32B31BF18F4068E00DEA323 /* CircleLayout.m in Sources */,
 				A3E67AD418E189FD0072CEB1 /* UILabel+customize.m in Sources */,
+				A32B31C218F4075A00DEA323 /* CircleCollectionView.m in Sources */,
 				A374083418D97D33003D8D36 /* WeatherAppDelegate.m in Sources */,
 				A325573418E9597F00B83CD0 /* ImgCell.m in Sources */,
+				A31DA32318EA5130001707B1 /* ForegroundInfo3View.m in Sources */,
 				A325573518E9597F00B83CD0 /* StartingLogoView.m in Sources */,
 				A32D9D4818DAC76A002746B4 /* StartingViewController.m in Sources */,
 			);

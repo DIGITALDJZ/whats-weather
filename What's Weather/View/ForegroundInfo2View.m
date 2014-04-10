@@ -8,7 +8,7 @@
 
 #import "ForegroundInfo2View.h"
 @interface ForegroundInfo2View()
-
+@property (strong,nonatomic) NSArray *viewArray;
 @property (strong,nonatomic) NSMutableArray *infotypes;
 @end
 
@@ -23,7 +23,7 @@
         self.infotypes=[[NSMutableArray alloc]initWithObjects:@"wind",@"wet",@"fire",@"pm25", nil];
         UIView *animateView1=[[UIView alloc]initWithFrame:CGRectMake(0, 40, 270, 25)];
         UIView *animateView2=[[UIView alloc]initWithFrame:CGRectMake(0, 80, 270, 25)];
-        [self.viewArray addObjectsFromArray:@[animateView1,animateView2]];
+        self.viewArray=@[animateView1,animateView2];
         ForegroundInfo_label *foregroundLabel1=[[ForegroundInfo_label alloc]initWithFrame:CGRectMake(25, 0, 100, 20)];
         ForegroundInfo_label *foregroundLabel2=[[ForegroundInfo_label alloc]initWithFrame:CGRectMake(150, 0, 100, 20)];
         ForegroundInfo_label *foregroundLabel3=[[ForegroundInfo_label alloc]initWithFrame:CGRectMake(25, 0, 100, 20)];
@@ -52,9 +52,9 @@
     return self;
 }
 
--(NSMutableArray *)viewArray{
+-(NSArray *)viewArray{
     if (!_viewArray) {
-        _viewArray=[[NSMutableArray alloc]init];
+        _viewArray=[[NSArray alloc]init];
     }
     return _viewArray;
 }

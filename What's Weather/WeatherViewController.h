@@ -11,6 +11,5 @@
 #import "ForegroundView.h"
 #import "ForegroundInfoView.h"
 #import "ForegroundInfo2View.h"
-@interface WeatherViewController : UIViewController <UICollectionViewDelegate>//,UICollectionViewDelegateFlowLayout>
-
+@interface WeatherViewController : UIViewController <UICollectionViewDelegate>
 @end

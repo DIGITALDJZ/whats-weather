@@ -93,7 +93,7 @@
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
+    //NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
 }
 
 
