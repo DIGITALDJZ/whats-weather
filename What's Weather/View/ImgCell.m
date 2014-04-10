@@ -10,8 +10,8 @@
 const NSUInteger infoTypeCount =2;
 @interface ImgCell()
 
-@property (strong,nonatomic) ForegroundView *foregroundView;
-@property (weak, nonatomic) IBOutlet UIView *foregroundViewWrap;
+//@property (strong,nonatomic) ForegroundView *foregroundView;
+//@property (weak, nonatomic) IBOutlet UIView *foregroundViewWrap;
 
 @end
 
@@ -33,6 +33,7 @@ const NSUInteger infoTypeCount =2;
     }
     return self;
 }
+/*
 -(void)foregroundViewAdd{
     [self.foregroundViewWrap addSubview:self.foregroundView];
     [self.foregroundView foregroundInfoReset];
@@ -43,4 +44,5 @@ const NSUInteger infoTypeCount =2;
     }
     return _foregroundView;
 }
+ */
 @end

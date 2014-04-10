@@ -16,7 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *topbarTitle;
 @property (strong,nonatomic) NSMutableArray *imgArray;
 @property (weak, nonatomic) IBOutlet UICollectionView *locationCollection;
-
+@property (strong,nonatomic) ForegroundView *foregroundView;
+@property (weak, nonatomic) IBOutlet UIView *foregroundViewWrap;
 
 @end
 
@@ -39,7 +40,7 @@
     [self.view bringSubviewToFront:self.topbarView];
     self.imgArray=[[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"yunnan.jpg"],[UIImage imageNamed:@"daocheng.jpg"],[UIImage imageNamed:@"shanghai.jpg"], nil];
     self.locationCollection.frame=CGRectMake(0, 0, 320, SCREEN_SIZE.height);
-
+    [self foregroundViewAdd];
 }
 
 - (BOOL)shouldAutorotate
@@ -71,9 +72,8 @@
     imgCell.imageView.image =[self.imgArray objectAtIndex:indexPath.row];
 
 
-    [imgCell foregroundViewAdd];
+    //[imgCell foregroundViewAdd];
 
-    //[imgCell foregroundInfoAdd];
     return imgCell;
 
 }
@@ -95,7 +95,17 @@
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     //NSIndexPath *indexPath=[self.locationCollection indexPathsForVisibleItems].firstObject;
 }
+-(void)foregroundViewAdd{
+    [self.foregroundViewWrap addSubview:self.foregroundView];
+    [self.foregroundView foregroundInfoReset];
+}
 
+-(ForegroundView *)foregroundView{
+    if (!_foregroundView) {
+        _foregroundView=[[ForegroundView alloc]initWithFrame:CGRectMake(0, 0, 320, 140)];
+    }
+    return _foregroundView;
+}
 
 
 @end

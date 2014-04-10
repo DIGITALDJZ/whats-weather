@@ -91,16 +91,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-dL-BnZ">
-                                                    <rect key="frame" x="0.0" y="428" width="320" height="140"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="fsj-dL-BnZ" secondAttribute="bottom" id="1rf-oA-unN"/>
                                             <constraint firstAttribute="bottom" secondItem="R2g-Rl-C7P" secondAttribute="bottom" id="Dwd-cb-r1j"/>
                                             <constraint firstItem="R2g-Rl-C7P" firstAttribute="leading" secondItem="XeF-F3-CCw" secondAttribute="leading" id="XWp-YL-R3O"/>
                                             <constraint firstItem="R2g-Rl-C7P" firstAttribute="top" secondItem="XeF-F3-CCw" secondAttribute="top" id="f0S-L2-UAZ"/>
@@ -108,7 +102,6 @@
                                         </constraints>
                                         <size key="customSize" width="320" height="568"/>
                                         <connections>
-                                            <outlet property="foregroundViewWrap" destination="fsj-dL-BnZ" id="bt0-ds-NJQ"/>
                                             <outlet property="imageView" destination="R2g-Rl-C7P" id="3Cl-El-vP8"/>
                                         </connections>
                                     </collectionViewCell>
@@ -118,6 +111,11 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="luf-yf-ekv"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-dL-BnZ">
+                                <rect key="frame" x="0.0" y="428" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-yj-GB0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -149,6 +147,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fsj-dL-BnZ" secondAttribute="bottom" id="AiR-fb-Wqm"/>
                             <constraint firstAttribute="trailing" secondItem="yJh-Bj-IRX" secondAttribute="trailing" id="M9v-zA-moM"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yJh-Bj-IRX" secondAttribute="bottom" id="Z2E-fZ-98b"/>
                             <constraint firstItem="yJh-Bj-IRX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="c6A-Y5-AXk"/>
@@ -157,6 +156,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="foregroundViewWrap" destination="fsj-dL-BnZ" id="V7c-zw-XJc"/>
                         <outlet property="locationCollection" destination="yJh-Bj-IRX" id="u5X-x2-zYX"/>
                         <outlet property="topbarTitle" destination="M1Z-w4-rOz" id="Jhy-vx-FaP"/>
                         <outlet property="topbarView" destination="mxK-yj-GB0" id="iSw-0X-lSt"/>
